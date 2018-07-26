@@ -6,6 +6,11 @@ puts "Copying from #{from_file} to #{to_file}"
 in_file = open(from_file)
 indata = in_file.read
 
+indata_o = open(from_file).read
+puts "######"
+puts indata_o
+puts "######"
+
 puts "The input file is #{indata.length} bytes long"
 
 puts "Does the output file exist? #{File.exist?(to_file)}"
